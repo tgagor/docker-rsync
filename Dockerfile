@@ -1,7 +1,7 @@
 FROM debian:jessie
 MAINTAINER tgagor, https://github.com/tgagor
 
-# Install ClamAV
+# Install rsync
 RUN apt-get update \
   && apt-get install -y rsync gzip openssh-client \
   && apt-get autoremove -y \
