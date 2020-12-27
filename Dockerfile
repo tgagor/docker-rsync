@@ -1,5 +1,8 @@
-FROM debian:jessie
+FROM debian:buster
 MAINTAINER tgagor, https://github.com/tgagor
+
+ENV DEBIAN_FRONTEND noninteractive
+ENV TERM xterm
 
 # Install rsync
 RUN apt-get update \
